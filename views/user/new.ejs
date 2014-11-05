@@ -1,0 +1,27 @@
+<div class="container">
+	<form action="/user/create" method="POST" class="newUser">
+		<h2>Test Project form for test POST METHOD</h2>
+		<div class="control-group>"
+			<div class="controls">
+				<input type="text" class="form-control" placeholder="your name" name="name">
+			</div>
+			<div class="controls">
+				<input type="text" class="form-control" placeholder="your title" name="title">
+			</div>
+			<div class="controls">
+				<input type="text" class="form-control" placeholder="your email adress" name="email">
+			</div>
+			<div class="controls">
+				<input type="password" class="form-control" placeholder="password" name="password">
+			</div>
+			<div class="controls">
+				<input type="password" class="form-control" placeholder="password confirmation" name="confirmation"
+			</div>
+			</br>
+			<div class="controls">
+				<input type="submit" class="btn btn-lg btn-primary btn-block" value="Create a New User"/>
+			</div>
+			<input type="hidden" name="_csrf" value="<% _csrf %>" />
+			</div>
+	</form>
+</div>

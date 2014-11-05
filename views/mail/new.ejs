@@ -1,0 +1,22 @@
+<div class="container">
+	<form action="/mail/create" method="POST" class="newUser">
+		<h2>Send like test email</h2>
+		<div class="control-group>"
+			<div class="controls">
+				<input type="text" class="form-control" placeholder="example@mail.com" name="to">
+			</div>
+			<div class="controls">
+				<input type="text" class="form-control" placeholder="subject" name="subject">
+			</div>
+			<div class="controls">
+				<input type="textarea" class="form-control" placeholder="your message" name="text">
+			</div>
+			
+			</br>
+			<div class="controls">
+				<input type="submit" class="btn btn-lg btn-primary btn-block" value="Create a Letter"/>
+			</div>
+			<input type="hidden" name="_csrf" value="<% _csrf %>" />
+			</div>
+	</form>
+</div>
